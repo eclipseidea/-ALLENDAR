@@ -1,29 +1,21 @@
 package calendar;
 
-public class CheckOFmounth {
-	static Month[] mounth = Month.values();
-
-	public Month[] getMounth() {
-		return mounth;
-	}
-
-	public void setMounth(Month[] mounth) {
-		CheckOFmounth.mounth = mounth;
-	}
+public class CheckOFMonth {
+	static Month[] months = Month.values();
   
    public static void checkMounth(String string){
      boolean exist = false;
      Month month = null;
-      for (int i = 0; i < mounth.length; i++) {
-		 if(string.equals(mounth[i].name())){
-			  month = mounth[i]; 
+      for (int i = 0; i < months.length; i++) {
+		 if(string.equals(months[i].name())){
+			  month = months[i]; 
 			 exist = true;
 		 }
 	 }
 	 if(exist){
     	 System.out.println();
 		 System.out.println("MOUNTH "+string+" EXIST");
-    	 AllMounthOfSameSeasons.checkSeason(month);
+    	 AllMonthOfSameSeasons.checkSeason(month);
 	 }
      else{
     	 System.out.println("MOUNTH " +string+" DOES NOT EXIST");

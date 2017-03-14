@@ -13,7 +13,7 @@ public class Main {
 		System.out.println("INPUT YOUR MONTH");
     	System.out.println();
 		String string = scanner.nextLine();
-		CheckOFmounth.checkMounth(string.toUpperCase());
+		CheckOFMonth.checkMounth(string.toUpperCase());
 	    scanner.close();
 	}
     

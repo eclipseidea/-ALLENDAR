@@ -1,12 +1,12 @@
 package calendar;
 
-public class ChekMinQuontityOfDays {
+public class CheckMinQuontityOfDays {
 	static Month[] mounth = Month.values();
     
 	public static void checkMin(Month month) {
-        System.out.println();
-        System.out.println();
-		System.out.println("MONTHS WICH HAS lOWEST QUONTITY OF DAYS");
+		System.out.println();
+		System.out.println();
+        System.out.println("MONTHS WICH HAS lOWEST QUONTITY OF DAYS");
 		String monthDayss = null;
 		boolean exist = false;
 		for (int i = 0; i < mounth.length; i++) {

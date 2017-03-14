@@ -1,24 +1,24 @@
 package calendar;
 
-public class AllMounthOfSameSeasons {
+public class AllMonthOfSameSeasons {
 
-	static Month[] mounth = Month.values();
+	static Month[] months = Month.values();
 
 	public Month[] getMounth() {
-		return mounth;
+		return months;
 	}
 
 	public static void checkSeason(Month month) {
 		System.out.println();
 		System.out.println("MONTHS OF THE SEASON");
 		String monthOfSeason = null;
-		for (int i = 0; i < mounth.length; i++) {
-			if (month.getSeason().equals(mounth[i].getSeason())){
-				monthOfSeason = mounth[i].name();	
+		for (int i = 0; i < months.length; i++) {
+			if (month.getSeason().equals(months[i].getSeason())){
+				monthOfSeason = months[i].name();	
 			    System.out.print(monthOfSeason+ " ");
 			   
 			}
 	}
-		SamequontityOfDays.checkEquals(month);
+		SameQuontityOfDays.checkEquals(month);
   }
 }
